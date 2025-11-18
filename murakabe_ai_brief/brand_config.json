@@ -1,0 +1,75 @@
+{
+  "brand_name": "Murakabe",
+  "tagline_tr": "İşletmenizin akıllı denetimi: veriyi birleştirir, akışları hızlandırır, kararları netleştirir.",
+  "tagline_en": "Intelligent oversight for your operations.",
+  "voice_traits": [
+    "net",
+    "teknik ama erişilebilir",
+    "çıktı odaklı",
+    "güven verici"
+  ],
+  "colors": {
+    "night_navy": "#0B1533",
+    "orbit_blue": "#2E7FF6",
+    "fog_grey": "#CBD2DC",
+    "polar_white": "#F7F9FC",
+    "success_green": "#10B981",
+    "danger_red": "#EF4444",
+    "warning_amber": "#F59E0B"
+  },
+  "typography": {
+    "headings": "Inter, Plus Jakarta Sans, system-ui, -apple-system, Segoe UI, Arial, sans-serif",
+    "body": "Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif",
+    "mono": "JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace"
+  },
+  "modules": [
+    {
+      "code": "core",
+      "name": "Murakabe Core",
+      "desc_tr": "Temel ERP, tek veri modeli",
+      "desc_en": "Core ERP, single data model"
+    },
+    {
+      "code": "books",
+      "name": "Murakabe Books",
+      "desc_tr": "Finans, fatura, e-belge",
+      "desc_en": "Finance, invoicing, e-docs"
+    },
+    {
+      "code": "ops",
+      "name": "Murakabe Ops",
+      "desc_tr": "Stok, satınalma, üretim",
+      "desc_en": "Inventory, purchasing, MRP"
+    },
+    {
+      "code": "crm",
+      "name": "Murakabe CRM",
+      "desc_tr": "Satış, pipeline, teklif",
+      "desc_en": "Sales, pipeline, quoting"
+    },
+    {
+      "code": "people",
+      "name": "Murakabe People",
+      "desc_tr": "İK, izin, bordro",
+      "desc_en": "HR, leave, payroll"
+    },
+    {
+      "code": "flow",
+      "name": "Murakabe Flow",
+      "desc_tr": "İş akışları, onay",
+      "desc_en": "Workflows & approvals"
+    },
+    {
+      "code": "sense",
+      "name": "Murakabe Sense",
+      "desc_tr": "Analitik, tahmin, anomali",
+      "desc_en": "Analytics, forecasting, anomaly"
+    },
+    {
+      "code": "pay",
+      "name": "Murakabe Pay",
+      "desc_tr": "Tahsilat/ödeme entegrasyonları",
+      "desc_en": "Collections & payments"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+/* Sidebar Styles - Murakabe Theme */
+.sidebar {
+  background: var(--surface, #ffffff);
+  border-right: 1px solid var(--border, #CBD2DC);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 4rem;
+}
+
+.sidebar:not(.collapsed) {
+  width: 16rem;
+}
+
+.sidebar-logo {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--border, #CBD2DC);
+}
+
+.sidebar-logo .logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.sidebar-logo .logo-image {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.sidebar-logo .logo-icon-small {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.sidebar-menu {
+  padding: 0.75rem;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  color: var(--text, #0B1533);
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.sidebar-menu-item:hover {
+  background: var(--polar-white, #F7F9FC);
+}
+
+.sidebar-menu-item.active {
+  background: rgba(46, 127, 246, 0.1);
+  color: var(--orbit-blue, #2E7FF6);
+  font-weight: 600;
+}
+
+.sidebar-menu-item svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  stroke-width: 2;
+}
+
+.sidebar-menu-item.active svg {
+  color: var(--orbit-blue, #2E7FF6);
+}
+
+.sidebar-menu-item span {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.sidebar.collapsed .sidebar-menu-item span {
+  display: none;
+}
+
+.sidebar.collapsed .logo-wrapper span {
+  display: none;
+}
+
+.sidebar-toggle {
+  padding: 0.375rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  background: var(--polar-white, #F7F9FC);
+}
+
+.sidebar-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--text-secondary, #64748b);
+  transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed .sidebar-toggle svg {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .text { font: 800 180px "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 1.2px; fill:#0B1533; text-anchor: middle; }
+    </style>
+  </defs>
+  <!-- Icon -->
+  <g transform="translate(450,280)">
+    <ellipse rx="230" ry="120" fill="none" stroke="#2E7FF6" stroke-width="22"/>
+    <circle cx="180" cy="-90" r="32" fill="#2E7FF6"/>
+    <!-- subtle accent arc -->
+    <path d="M -200 80 A 230 120 0 0 0 200 80" fill="none" stroke="#2E7FF6" stroke-width="22" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="450" y="700" class="text">murakabe</text>
+</svg>

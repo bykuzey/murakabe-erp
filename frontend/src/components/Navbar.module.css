@@ -1,0 +1,142 @@
+/* Navbar Styles - Murakabe Theme */
+.navbar {
+  background: var(--surface, #ffffff);
+  border-bottom: 1px solid var(--border, #CBD2DC);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-search {
+  flex: 1;
+  max-width: 32rem;
+}
+
+.navbar-search .search-wrapper {
+  position: relative;
+}
+
+.navbar-search input {
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid var(--border, #CBD2DC);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  background: var(--polar-white, #F7F9FC);
+  color: var(--text, #0B1533);
+}
+
+.navbar-search input:focus {
+  outline: none;
+  border-color: var(--orbit-blue, #2E7FF6);
+  box-shadow: 0 0 0 3px rgba(46, 127, 246, 0.1);
+  background: var(--surface, #ffffff);
+}
+
+.navbar-search input::placeholder {
+  color: var(--text-secondary, #64748b);
+}
+
+.navbar-search svg {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #9ca3af;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-notification {
+  position: relative;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
+.navbar-notification:hover {
+  background: #f3f4f6;
+}
+
+.navbar-notification svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #4b5563;
+}
+
+.navbar-notification .notification-badge {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #ef4444;
+  border-radius: 50%;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 1rem;
+  border-left: 1px solid #e5e7eb;
+}
+
+.navbar-user-info {
+  text-align: right;
+}
+
+.navbar-user-info p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.navbar-user-info span {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.navbar-user-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: rgba(46, 127, 246, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(46, 127, 246, 0.2);
+}
+
+.navbar-user-avatar:hover {
+  background: rgba(46, 127, 246, 0.15);
+  transform: translateY(-1px);
+}
+
+.navbar-user-avatar svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--orbit-blue, #2E7FF6);
+}

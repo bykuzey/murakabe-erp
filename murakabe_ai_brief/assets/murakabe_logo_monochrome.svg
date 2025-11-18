@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+  <defs>
+    <style>
+      .text { font: 700 220px "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif; letter-spacing: 1.5px; fill:#111111; }
+    </style>
+  </defs>
+  <text x="200" y="360" class="text">murakabe</text>
+  <g transform="translate(200,0)">
+    <path d="M 320 140 C 520 30, 840 30, 1040 140" fill="none" stroke="#111111" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 320 450 C 520 540, 840 540, 1040 450" fill="none" stroke="#111111" stroke-width="18" stroke-linecap="round"/>
+    <path d="M 1040 450 C 1070 360, 1070 230, 1040 140" fill="none" stroke="#111111" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="1068" cy="122" r="30" fill="#111111"/>
+  </g>
+</svg>

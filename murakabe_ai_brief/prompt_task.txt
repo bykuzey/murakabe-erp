@@ -1,0 +1,12 @@
+Task: Continue this ERP project called "Murakabe" using the attached brand_config.json and assets/ logos.
+Focus on: 
+1) Implement a minimal 'Murakabe Core' service with Company, User, Role, Permission, AuditLog tables (PostgreSQL).
+2) Provide a REST/OpenAPI spec for CRUD + RBAC.
+3) Scaffold a Next.js app with a basic dashboard using the design tokens and the logo (assets/).
+4) Seed scripts + Docker Compose for local dev.
+Deliver:
+- Source code structure
+- Key files (TS/TSX/SQL/YAML)
+- README with setup commands
+- Notes on how to integrate modules (Books, Ops, Flow, Sense) later.
+Constraints: clear separation of layers; .env example; no secrets; i18n TR/EN skeleton.
