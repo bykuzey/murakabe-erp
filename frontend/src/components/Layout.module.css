@@ -1,4 +1,4 @@
-/* Layout Styles */
+/* Layout Styles - Mobile Responsive */
 .layout {
   display: flex;
   min-height: 100vh;
@@ -9,9 +9,35 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin-left: 16rem;
+  transition: margin-left 0.3s ease;
+}
+
+/* Collapsed sidebar */
+.layout-main.collapsed {
+  margin-left: 4rem;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .layout-main {
+    margin-left: 0;
+  }
+
+  .layout-main.collapsed {
+    margin-left: 0;
+  }
 }
 
 .layout-content {
   flex: 1;
   overflow-y: auto;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .layout-content {
+    padding: 1rem;
+    padding-top: 4.5rem; /* Space for mobile menu button */
+  }
 }

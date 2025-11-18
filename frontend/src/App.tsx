@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ToastProvider } from './components/ToastContainer';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import POS from './pages/POS';
@@ -25,23 +26,25 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/pos" element={<POS />} />
-            <Route path="/pos/history" element={<POSHistory />} />
-            <Route path="/accounting" element={<Accounting />} />
-            <Route path="/sales" element={<SalesOrders />} />
-            <Route path="/inventory" element={<Products />} />
-            <Route path="/inventory/new" element={<ProductCreate />} />
-            <Route path="/inventory/moves" element={<StockMoves />} />
-            <Route path="/customers" element={<Customers />} />
-            <Route path="/ai-reports" element={<AIReports />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
+      <ToastProvider>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/pos" element={<POS />} />
+              <Route path="/pos/history" element={<POSHistory />} />
+              <Route path="/accounting" element={<Accounting />} />
+              <Route path="/sales" element={<SalesOrders />} />
+              <Route path="/inventory" element={<Products />} />
+              <Route path="/inventory/new" element={<ProductCreate />} />
+              <Route path="/inventory/moves" element={<StockMoves />} />
+              <Route path="/customers" element={<Customers />} />
+              <Route path="/ai-reports" element={<AIReports />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </ToastProvider>
     </QueryClientProvider>
   );
 }
